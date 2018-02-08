@@ -11,7 +11,7 @@ title                    : "Ibrahim Akbar"
 title_separator          : "-"
 name                     : &name "Ibrahim Akbar"
 description              : &description "Master Duck"
-url                      : https://ibrahimka.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ibrahimkakbar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ibrahimkakbar/ibrahimkakbar.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -101,7 +101,7 @@ author:
   orcid            :
   pinterest        :
   soundcloud       :
-  stackoverflow    : #
+  stackoverflow    :
   steam            :
   tumblr           :
   twitter          :
@@ -193,7 +193,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false
+      comments: true
       share: true
       related: true
   # _pages
@@ -211,7 +211,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: false
+      comments: true
   # _publications
   - scope:
       path: ""
@@ -220,7 +220,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: false
+      comments: true
   # _portfolio
   - scope:
       path: ""
@@ -229,7 +229,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: false
+      comment: true
   # _talks
   - scope:
       path: ""
