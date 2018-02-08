@@ -11,7 +11,7 @@ title                    : "Ibrahim Akbar"
 title_separator          : "-"
 name                     : &name "Ibrahim Akbar"
 description              : &description "Master Duck"
-url                      : https://ibrahimkakbar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ibrahimka.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ibrahimkakbar/ibrahimkakbar.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -78,33 +78,33 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Ibrahim Akbar"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "MS in Robotics at UC San Diego"
+  location         : "San Diego, CA"
   employer         :
   googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  uri              :
-  bitbucket        :
+  email            : "iakbar@ucsd.edu"
+  uri              : 
+  bitbucket        : 
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "ibrahimkakbar"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : #
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -170,16 +170,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -193,7 +193,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
@@ -211,7 +211,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -220,7 +220,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -229,7 +229,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comment: false
   # _talks
   - scope:
       path: ""
