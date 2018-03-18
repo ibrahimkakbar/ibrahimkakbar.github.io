@@ -85,10 +85,10 @@ author:
   bio              : "MS in Robotics at UC San Diego"
   location         : "San Diego, CA"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    :
   email            : "iakbar@ucsd.edu"
   uri              : 
-  bitbucket        : 
+  bitbucket        : "iakbar16" 
   codepen          :
   dribbble         :
   flickr           :
