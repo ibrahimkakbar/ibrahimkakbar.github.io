@@ -11,49 +11,23 @@ redirect_from:
 
 Education
 ======
-* B.S. in Github, Github University, 2012
-* M.S. in Jekyll, Github University, 2014
-* Ph.D in Version Control Theory, Github University, 2018 (expected)
+* M.S. in Electrical Engineering, University of California, San Diego, June 2019
+ * Focus : Intelligent Systems, Robotics, and Control
+* B.S. in Electrical and Computer Engineering, University of Rochester, May 2017
+ * Focus : Random Processes and Robot Control
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+Work Experience
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Software Developer Intern, October 2017 - Present
+ * Tortuga Logic, Inc.
+* Undergraduate Research Assistant, May 2016 - August 2016
+ * Wireless Communication and Network Group (WCNG), University of Rochester  
+Working under Professor Wendi Heinzelman, I assisted in the modeling of elephant motion 
+in Sri Lanka to test the performance of a delay tolerant network protol, Epidemic, for 
+tracking purposes.
+* Undergraduate Research Assistant, May 2016 - August 2016
+ * Independent Work, University of Rochester  
+Working under Professor Mateos Gonzalos, I developed a database of all previously recorded 
+football matches in order to run clustering algorithms on them. Implemented agglomerative clustering 
+for clique detection and extended it to time variant networks.
