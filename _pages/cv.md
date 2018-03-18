@@ -11,21 +11,20 @@ redirect_from:
 
 Education
 ======
-* M.S. in Electrical Engineering, University of California, San Diego, June 2019
+* M.S. in Electrical Engineering, University of California, San Diego, _expected June 2019_
     * Focus : Intelligent Systems, Robotics, and Control
-* B.S. in Electrical and Computer Engineering, University of Rochester, May 2017
-    * Focus : Random Processes and Robot Control
+* B.S. in Electrical and Computer Engineering, University of Rochester, _May 2017_
 
 
 Work Experience
 ======
-* Software Developer Intern, October 2017 - Present
+* Software Developer Intern, _October 2017 - Present_
     * Tortuga Logic, Inc.
-* Undergraduate Research Assistant, May 2016 - August 2016
+* Undergraduate Research Assistant, _May 2016 - August 2016_
     * Wireless Communication and Network Group (WCNG) under Wendi Heinzelman, University of Rochester
-* Undergraduate Research Assistant, May 2016 - August 2016
+* Undergraduate Research Assistant, _May 2016 - August 2016_
     * Independent Work under Mateos Gonzalos, University of Rochester
-* Undergraduate Research Assistant, May 2015 - July 2015
+* Undergraduate Research Assistant, _May 2015 - July 2015_
     * Interdisciplinary Research in Electrical and Computer Engineeringer, Oakland University
 
 
