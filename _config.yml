@@ -195,6 +195,7 @@ defaults:
       type: posts
     values:
       layout: single
+      category: "blog"
       author_profile: true
       read_time: true
       comments: true
@@ -206,6 +207,7 @@ defaults:
       type: music
     values:
       layout: single
+      category: "music-blog"
       author_profile: true
       read_time: true
       comments: true
