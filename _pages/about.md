@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a first year Master's student in UC San Diego Electrical and Engineering Department. I am concentrating on Intelligent Systems, Robotics, and Control with a more direct interest in motion planning, robust control, 
+I am currently a first year M.S. student in UC San Diego's Electrical and Engineering Department. I am concentrating on Intelligent Systems, Robotics, and Control with a more direct interest in motion planning, robust control, 
 and optimization. **More to come...**
 
