@@ -21,17 +21,21 @@ Work Experience
 ======
 * Software Developer Intern, October 2017 - Present
     * Tortuga Logic, Inc.
-* Undergraduate Research Assistant, May 2016 - August 2016  
-    * Wireless Communication and Network Group (WCNG), University of Rochester  
->Working under Professor Wendi Heinzelman, I assisted in the modeling of elephant motion 
-in Sri Lanka to test the performance of a delay tolerant network protol, Epidemic, for 
-tracking purposes.
-* Undergraduate Research Assistant, May 2016 - August 2016  
-    * Independent Work, University of Rochester  
->Working under Professor Mateos Gonzalos, I developed a database of all previously recorded 
-football matches in order to run clustering algorithms on them. Implemented agglomerative clustering 
-for clique detection and extended it to time variant networks.
+* Undergraduate Research Assistant, May 2016 - August 2016
+    * Wireless Communication and Network Group (WCNG) under Wendi Heinzelman, University of Rochester
+* Undergraduate Research Assistant, May 2016 - August 2016
+    * Independent Work under Mateos Gonzalos, University of Rochester
 * Undergraduate Research Assistant, May 2015 - July 2015
-    * Interdisciplinary Research in Electrical and Computer Engineeringer, Oakland University  
->Working under Professor Brian Dean, I assessed the quality of commercially available brain computer 
-interfaces (BCI) based on the Emotiv EPOC+ and developed a prototype for a brain radio interface system.
+    * Interdisciplinary Research in Electrical and Computer Engineeringer, Oakland University
+
+
+Skills
+======
+* Programming Languages
+    * C, C++, Java, Python, Javascript, Bash
+* Libraries
+    * ROS, Caffe, NS-3
+* Version Control
+    * Git, Mecurial
+* Operating Systems
+    * Linux, Windows
