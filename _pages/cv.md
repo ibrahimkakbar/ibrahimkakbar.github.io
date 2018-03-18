@@ -25,7 +25,7 @@ Work Experience
 * Undergraduate Research Assistant, _May 2016 - August 2016_
     * Independent Work under Mateos Gonzalos, University of Rochester
 * Undergraduate Research Assistant, _May 2015 - July 2015_
-    * Interdisciplinary Research in Electrical and Computer Engineeringer, Oakland University
+    * Interdisciplinary Research in Electrical and Computer Engineering Program, Oakland University
 
 
 Skills
