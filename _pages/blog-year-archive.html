@@ -2,6 +2,7 @@
 layout: archive
 permalink: /blog-year-archive/
 title: "Blog Posts"
+category: "blog"
 author_profile: true
 redirect_from:
   - /wordpress/blog-posts/
@@ -10,10 +11,12 @@ redirect_from:
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ blog year | slugify }}" class="archive__subtitle">{{ blog year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
+  {% if post.categories contains 'blog' %} 
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% if year != written_year %}
+      <h2 id="{{ blog year | slugify }}" class="archive__subtitle">{{ blog year }}</h2>
+      {% capture written_year %}{{ year }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html %}
   {% endif %}
-  {% include archive-single.html %}
 {% endfor %}
