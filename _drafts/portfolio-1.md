@@ -1,5 +1,6 @@
 ---
 title: "4G Quadcopter"
+collection: drafts
 excerpt: "<br/><img src='/images/jerry.jpg' width='300' height='300'>"
 permalink: /drafts/portfolio-1/
 --
