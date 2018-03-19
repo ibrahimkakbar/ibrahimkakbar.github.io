@@ -31,7 +31,7 @@ Work Experience
 Skills
 ======
 * **Programming Languages:** C, C++, Java, Python, Javascript, Bash
-* **Libraries:** ROS, Caffe, NS-3
+* **Libraries:** ROS, OpenCV, Caffe, NS-3
 * **Version Control:** Git, Mecurial
 * **Operating Systems:** Linux, Windows
 
