@@ -1,13 +1,13 @@
 ---
-title: "1st Attempt at a Quadcopter"
-excerpt: "<br/><img src='/images/jerry.jpg' width='500' height='500'>"
+title: "4G Quadcopter"
+excerpt: "<br/><img src='/images/jerry.jpg' width='300' height='300'>"
 collection: portfolio
 ---
 
 Jerry
 ======
 
-![Jerry 4G Quadcopter](https://ibrahimkakbar.io/images/jerry.jpg)  
+<img style="float: center;" src="https://ibrahimkakbar.github.io/images/jerry.jpg" width="500" height="500">  
 The first time I built a Quadcopter it was with the goal in mind of being able to fly from anywhere. It was quite 
 the ambitious statement, but my good friend, [Matt Dombroski](https://mattdombro.wordpress.com), is always up for a 
 rediculous challenge. Thus we got a group of friends together and what came into existence is our quadcopter, Jerry.  
