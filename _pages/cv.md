@@ -34,3 +34,11 @@ Skills
 * **Libraries:** ROS, Caffe, NS-3
 * **Version Control:** Git, Mecurial
 * **Operating Systems:** Linux, Windows
+
+
+Select Coursework
+======
+* Sensing & Estimation in Robotics, _Fall 2017_
+* Planning & Learning in Robotics, _Winter 2018_
+* Statistical Learning I & II, _Fall 2017, Winter 2018_
+* Stochastic Processes in Dynamic Systems I, _Winter 2018_
