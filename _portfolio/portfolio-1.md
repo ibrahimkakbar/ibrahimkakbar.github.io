@@ -1,7 +1,12 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "1st Attempt at a Quadcopter"
+excerpt: "<br/><img src='/images/jerry.jpg' width='150' height='150'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+The first time I built a Quadcopter it was with the goal in mind of being able to fly from anywhere. It was quite 
+the ambitious statement, but my good friend, [Matt Dombroski](https://mattdombro.wordpress.com), is always up for a 
+rediculous challenge. Thus we got a group of friends together and what came into existence is our quadcopter, Jerry.  
+We developed the flight controller from scratch using a TI Tiva C Series Launchpad ARM, broke through many frames 
+and props, led a war on sleep, got a Raspberry PI to communicate with an Xbox Controller through LTE, and set up a 
+server in hopes that we had enough bandwidth to stream video at a reasonable rate.  
