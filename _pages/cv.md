@@ -42,3 +42,9 @@ Select Coursework
 * Planning & Learning in Robotics, _Winter 2018_
 * Statistical Learning I & II, _Fall 2017, Winter 2018_
 * Stochastic Processes in Dynamic Systems I, _Winter 2018_
+
+
+Languages
+======
+* **German** - Native Fluency
+* **English** - Native Fluency
