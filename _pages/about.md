@@ -17,6 +17,13 @@ and optimization. **More to come...**
 
 News & Updates
 ======
-* **October, 2017**   Accepted an internship position with Tortuga Logic, Inc.
-* **September, 2017** The start of my graduate journey begins!
-* **July, 2017** Went to Asia for the first time and stayed in Thailand & Cambodia.
+<dl>
+ <dt>**February, 2018**</dt>
+  <dd>Accepted research position in the Existential Robotics Lab at UC, San Diego under Prof. Atanasov.</dd>
+ <dt>**October, 2017**</dt>
+  <dd>Accepted an internship position with Tortuga Logic, Inc.</dd>
+ <dt>**September, 2017**</dt>
+  <dd>The start of my graduate journey begins!</dd>
+ <dt>**July, 2017**</dt>
+  <dd>Went to Asia for the first time and stayed in Thailand & Cambodia.</dd>
+</dl>
