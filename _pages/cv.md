@@ -28,6 +28,12 @@ Work Experience
     * Interdisciplinary Research in Electrical and Computer Engineering Program, Oakland University
 
 
+Publications
+======
+* C. Tapparello, N. Adam, M. N. Wijesundara, **I. Akbar** and W. Heinzelman, “Multi-Sink Epidemic
+Routing Protocol for Real-Time Tracking of the JumboNet Elephants,” submitted.
+
+
 Skills
 ======
 * **Programming Languages:** C, C++, Java, Python, Javascript, Bash
