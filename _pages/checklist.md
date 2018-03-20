@@ -1,5 +1,5 @@
 ---
-title: Checklist
+title: Reading Checklist 
 layout: single
 permalink: /checklist/
 author_profile: false

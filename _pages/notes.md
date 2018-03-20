@@ -18,5 +18,5 @@ I will condense all my notes and information that I have gleaned from courses an
 which will be available for learning purposes! Except them to slowly trickle in as I transition everything to here.
 
 Here is a list of my Reading Goals:  
-[Checklist](https://ibrahimkakbar.github.io/checklist/)  
+[**__Checklist__**](https://ibrahimkakbar.github.io/checklist/)
 (Publicly available to keep me on **task**)
