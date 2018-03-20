@@ -17,7 +17,7 @@ and optimization. **More to come...**
 
 News & Updates
 ======
-* **February, 2018** :  Accepted research position in the Existential Robotics Lab at UC, San Diego under Prof. Atanasov.
-* **October, 2017** :   Accepted an internship position as software developer with Tortuga Logic, Inc.
-* **September, 2017** : The start of my graduate journey begins!
-* **July, 2017** :      Went to Asia for the first time and stayed in Thailand & Cambodia.
+* **Feb. 2018** : Joined the Existential Robotics Lab at UC San Diego under Professor Atanasov!
+* **Oct. 2017** : Joined [Tortuga Logic, Inc.](http://www.tortugalogic.com/) as Software Developer Intern.
+* **Sep. 2017** : The beginning of my graduate journey begins!
+* **July 2017** : Went to Asia for the first time and stayed in Thailand & Cambodia.
