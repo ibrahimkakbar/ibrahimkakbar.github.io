@@ -17,13 +17,13 @@ and optimization. **More to come...**
 
 News & Updates
 ======
-<dl>
- <dt>**February, 2018**</dt>
+<dl class="dl-inline">
+ <dt>February, 2018</dt>
   <dd>Accepted research position in the Existential Robotics Lab at UC, San Diego under Prof. Atanasov.</dd>
- <dt>**October, 2017**</dt>
+ <dt>October, 2017</dt>
   <dd>Accepted an internship position with Tortuga Logic, Inc.</dd>
- <dt>**September, 2017**</dt>
+ <dt>September, 2017</dt>
   <dd>The start of my graduate journey begins!</dd>
- <dt>**July, 2017**</dt>
+ <dt>July, 2017</dt>
   <dd>Went to Asia for the first time and stayed in Thailand & Cambodia.</dd>
 </dl>
