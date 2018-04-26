@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+**Under Construction**  
 I am currently a first year M.S. student in UC San Diego's Electrical and Computer Engineering Department. I am concentrating on Intelligent Systems, Robotics, and Control with a more direct interest in motion planning, 
 robust control, and optimization. **More to come...**
 
