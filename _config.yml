@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "Ibrahim's Cave"
 title_separator          : "-"
 name                     : &name "Ibrahim Akbar"
-description              : &description "Master Duck"
+description              : &description "All of my deemed important items"
 url                      : https://ibrahimkakbar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ibrahimkakbar/ibrahimkakbar.github.io"
@@ -83,7 +83,7 @@ analytics:
 # Site Author
 author:
   name             : "Ibrahim Akbar"
-  avatar           : "headshot2.jpg"
+  avatar           : "headshot.jpg"
   bio              : "MS in Robotics at UC San Diego"
   location         : "San Jose, CA"
   employer         :
