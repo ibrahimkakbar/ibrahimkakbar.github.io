@@ -4,8 +4,6 @@ _site/
 *.aux
 *.blg
 *.bbl
-*.pdf
 cls/
 bib/
 Makefile
-
