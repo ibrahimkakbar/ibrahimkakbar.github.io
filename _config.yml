@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ibrahim's Cave"
+title                    : "The Life of I"
 title_separator          : "-"
 name                     : &name "Ibrahim Akbar"
 description              : &description "All of my deemed important items"
@@ -84,9 +84,9 @@ analytics:
 author:
   name             : "Ibrahim Akbar"
   avatar           : "headshot2.jpg"
-  bio              : "MS in Robotics at UC San Diego"
+  bio              : "Robotics Enthusiast"
   location         : "San Jose, CA"
-  employer         :
+  employer         : "Honda RI"
   pubmed           :
   googlescholar    :
   email            : "iakbar@ucsd.edu"

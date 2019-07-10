@@ -7,9 +7,10 @@ redirect_from:
   - /start/
   - /start.html
 ---
+
 I am a second year Masters student in the ECE Department at UC San Diego studying robotics and artificial intelligence. I'm in the process of finishing up my thesis so wish me luck!
 
-I love learning math and enjoy applying it to robotics. I want to help develop robots that are able to coexisting with humans and provide novel solutions to major issues such as environmental cleaning/management and disaster or medical aid.
+I love learning math and enjoy applying it to robotics. I want to develop robots that are able to coexisting with humans and provide novel solutions to major issues such as environmental cleaning/management and disaster or medical aid.
 
 
 News & Updates
