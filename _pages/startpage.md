@@ -4,8 +4,8 @@ title: "Ibrahim Akbar"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  - /start/
+  - /start.html
 ---
 I am a second year Masters student in the ECE Department at UC San Diego studying robotics and artificial intelligence. I'm in the process of finishing up my thesis so wish me luck!
 
