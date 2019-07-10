@@ -4,13 +4,12 @@ title: "Ibrahim Akbar"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
-  - /start/
-  - /start.html
+  - /about/
+  - /about.html
 ---
+**Under Construction** 
+I am a second year Masters student in the ECE Department at UC San Diego studying robotics. I'm in the process of finishing up my thesis so wish me luck!
 
-I am a second year Masters student in the ECE Department at UC San Diego studying robotics and artificial intelligence. I'm in the process of finishing up my thesis so wish me luck!
-
-I have a love math and enjoy applying it to robotics.
 
 News & Updates
 ======
@@ -19,5 +18,5 @@ News & Updates
 * **Feb. 2018** : Joined the [Existential Robotics Lab](https://erl.ucsd.edu) under Professor Atanasov.
 * **Oct. 2017** : Joined [Tortuga Logic, Inc.](http://www.tortugalogic.com/) as a Software Developer Intern.
 * **Sep. 2017** : The beginning of my graduate journey at [UC San Diego](https://ucsd.edu) begins!
-* **July 2017** : Went to Asia for the first time visiting Thailand & Cambodia.
+* **July 2017** : Went to Asia for the first time and stayed in Thailand & Cambodia.
 
