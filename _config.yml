@@ -85,9 +85,9 @@ author:
   name             : "Ibrahim Akbar"
   avatar           : "headshot2.jpg"
   bio              : "MS in Robotics at UC San Diego"
-  location         : "San Diego, CA"
+  location         : "San Jose, CA"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           :
   googlescholar    :
   email            : "iakbar@ucsd.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
