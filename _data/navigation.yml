@@ -2,10 +2,10 @@
 main:
   - title: "Notes"
     url: /notes/
-  - title: "Collections"
-    url: /groups/
   - title: "Projects"
     url: /projects/
+  - title: "Collections"
+    url: /groups/
   - title: "CV"
     url: /files/IbrahimResume.pdf
   - title: "Blog"

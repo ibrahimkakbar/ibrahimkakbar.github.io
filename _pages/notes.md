@@ -1,8 +1,8 @@
 ---
 layout: archive
-title: "Notes for the Curious"
+title: "Notes"
 permalink: /notes/
-author_profile: false
+author_profile: true
 ---
 
 {% include base_path %}
@@ -11,12 +11,8 @@ author_profile: false
   {% include archive-single.html %}
 {% endfor %}
 
-Soon to Come
-======
 
-I will condense all my notes and information that I have gleaned from courses and literature into better notes 
-which will be available for learning purposes! Expect them to slowly trickle in as I transition everything onto here.
-
+The collection and groupings of all the work that I currently have
 Here is a list of my Reading Goals:  
 [***Checklist***](https://ibrahimkakbar.github.io/checklist/)
 (Publicly available to keep me on **task**)
