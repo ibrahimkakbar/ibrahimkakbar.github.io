@@ -2,11 +2,8 @@
 title: 'Life Goals'
 layout: single
 permalink: /goals/
-category: "blog"
+category: 'blog'
 author_profile: false
-tags:
-  - life
-  - global goals
 ---
 
 My short term memory is severely lacking and is the driving force behind me writing and recording everything I see. To help myself stay on track with all my desires and dreams I have written out and categorized them such that they are easily understood. With each reflection upon my life I wish to measure my progress toward these goals as well as assess the worth of the goal itself in the grand scheme. I think the best method for following through with goals is the through the method of divide-and-conquer. I will only preface large goals on the site and day to day activities are omitted.
