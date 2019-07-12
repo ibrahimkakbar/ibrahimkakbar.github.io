@@ -2,7 +2,7 @@
 layout: archive
 permalink: /music-year-archive/
 title: "Music Posts"
-category: "music-blog"
+category: "blog"
 author_profile: true
 ---
 
@@ -12,7 +12,7 @@ that resonates within you or just gets the heart moving. So hopefully one of the
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
-  {% if post.categories contains 'music-blog' %}
+  {% if post.tags contains 'music' %}
     {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
     {% if year != written_year %}
       <h2 id="{{ music year | slugify }}" class="archive__subtitle">{{ music year }}</h2>
