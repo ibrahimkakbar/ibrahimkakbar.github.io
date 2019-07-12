@@ -5,13 +5,13 @@ permalink: /collections/
 author_profile: false
 ---
 
-This page is for tracking all the conferences, applications, environments/datasets, and libraries that I think are useful. The conferences will be up to date in terms of their website.
+This page is for tracking all the conferences, applications, environments/datasets, and libraries that I think are useful. The conferences will be up to date in terms of their website. Eventually, I believe these lists will all become individually long and will be placed on their own pages.
 
 ## [Conferences](https://ibrahimkakbar.github.io/conferences)
 
 ## Applications
 + [nb](http://nb.mit.edu/welcome) : Online annotation for individuals/groups
-+ [Notable](https://github.com/notable/notable) : Amazing note taking application  
++ [notable](https://github.com/notable/notable) : Amazing note taking application  
 + [Tensorflow](https://www.tensorflow.org/) : Deep Learning Toolbox  
 + [GPyTorch](https://gpytorch.ai/) : Gaussian Processes implementation using PyTorch as base.  
 + [GPFlow](https://github.com/GPflow/GPflow) : Gaussian Processes implementation using Tensorflow as base.  
@@ -24,8 +24,8 @@ This page is for tracking all the conferences, applications, environments/datase
 + [CARLA](https://github.com/carla-simulator/carla) : Reinforcement Learning/Autonomous Driving Simulator
 
 ## Websites
-+ [Russ Tedrake's Underactuated Robotics](http://underactuated.mit.edu/underactuated.html)
-+ [Christopher Olah's Blog](https://colah.github.io/)
++ [Russ Tedrake's Underactuated Robotics Course](http://underactuated.mit.edu/underactuated.html)
++ [Christopher Olah's Deep Learning Blog](https://colah.github.io/)
 
 
 ## Libraries

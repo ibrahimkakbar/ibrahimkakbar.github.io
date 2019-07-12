@@ -13,6 +13,7 @@ author_profile: false
 5. Belize Vacation Planning (Nov. 2019)
 6. Personal Notes Condensation (Continuous)
 7. Job Applications (PhD?)
+8. Website Maintenance (Personal Life Maintenance lol)
 
 ### Random Necessities
 - New Debit Card
