@@ -5,7 +5,7 @@ main:
   - title: "Projects"
     url: /projects/
   - title: "Collections"
-    url: /groups/
+    url: /collections/
   - title: "CV"
     url: /files/IbrahimResume.pdf
   - title: "Blog"

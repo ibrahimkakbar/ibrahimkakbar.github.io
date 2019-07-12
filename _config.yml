@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "The Life of I"
+title                    : "The Life of Ibrahim"
 title_separator          : "-"
 name                     : &name "Ibrahim Akbar"
 description              : &description "All of my deemed important items"
