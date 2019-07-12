@@ -7,8 +7,7 @@ author_profile: false
 
 The ever expanding universe of interesting papers and book chapters that I want to go through.
 
-Papers
-======
+## Papers
 - [ ] Constrained Dynamical Systems, Robust Model Reference Adaptive Control, and Unreliable Reference Signals
 - [ ] [Smooth Extensions of Feedback Motion Planners via Reference Governors](https://repository.upenn.edu/cgi/viewcontent.cgi?article=1846&context=ese_papers)
 - [ ] [Prediction-Correction Interior-Point Method for Time-Varying Convex Optimization](https://arxiv.org/pdf/1608.07544.pdf)
@@ -27,8 +26,8 @@ Papers
 - [ ] [Control-Limited Differential Dynamic Programming](https://homes.cs.washington.edu/~todorov/papers/TassaICRA14.pdf)
 - [ ] [Human-level control through deep reinforcement learning](http://www.davidqiu.com:8888/research/nature14236.pdf)
 
-Book Chapters
-======
+## Book Chapters
+
 
 
 
