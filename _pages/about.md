@@ -6,13 +6,9 @@ author_profile: true
 redirect_from: 
   - /start/
   - /start.html
-mathjax : true
 ---
 
 I am a recent M.S. graduate of the ECE Department at UC San Diego where I focused on Intelligent Systems, Robotics, and Control. I love learning math and enjoy applying it to robotics. I want to develop mobile robots that are able to coexisting with humans and provide novel solutions to major issues such as environmental cleaning or management and disaster or medical aid. The dream is to make a positive impactful difference on the lives of others.
-
-$$p(w) = \int p(w \mid x)p(x) dx$$
-
 
 ## News & Updates
 * **Aug. 2019** : Defend my M.S. Thesis!
@@ -22,4 +18,3 @@ $$p(w) = \int p(w \mid x)p(x) dx$$
 * **Oct. 2017** : Joined [Tortuga Logic, Inc.](http://www.tortugalogic.com/) as a Software Developer Intern.
 * **Sep. 2017** : The beginning of my graduate journey at [UC San Diego](https://ucsd.edu) begins!
 * **Jul. 2017** : Went to Asia for the first time visiting Thailand & Cambodia.
-
