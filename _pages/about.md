@@ -6,14 +6,16 @@ author_profile: true
 redirect_from: 
   - /start/
   - /start.html
+mathjax : true
 ---
 
-I am a second year Masters student in the ECE Department at UC San Diego studying robotics and artificial intelligence. I'm in the process of finishing up my thesis so wish me luck!
+I am a recent M.S. graduate of the ECE Department at UC San Diego where I focused on Intelligent Systems, Robotics, and Control. I love learning math and enjoy applying it to robotics. I want to develop mobile robots that are able to coexisting with humans and provide novel solutions to major issues such as environmental cleaning or management and disaster or medical aid. The dream is to make a positive impactful difference on the lives of others.
 
-I love learning math and enjoy applying it to robotics. I want to develop mobile robots that are able to coexisting with humans and provide novel solutions to major issues such as environmental cleaning/management and disaster or medical aid.
+$$p(w) = \int p(w \mid x)p(x) dx$$
 
 
 ## News & Updates
+* **Aug. 2019** : Defend my M.S. Thesis!
 * **Jun. 2019** : Started an internship with [Honda Research Institute](https://usa.honda-ri.com)
 * **Jun. 2018** : Participated in the UCSD ECE Summer Research Internship Program (SRIP)
 * **Feb. 2018** : Joined the [Existential Robotics Lab](https://erl.ucsd.edu) under Professor Atanasov.

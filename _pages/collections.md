@@ -18,6 +18,8 @@ This page is for tracking all the conferences, applications, environments/datase
 + [SeDuMi](http://sedumi.ie.lehigh.edu/) : Optimization solver that solves for objectives over symmetric cones  
 + [GloptiPoly 3](http://homepages.laas.fr/henrion/software/gloptipoly/) : Generalized moment optimzation solver that handles polynomial data
 
++ [PyEnv](https://github.com/pyenv/pyenv): Python version management
+
 
 ## Datasets/Environments
 + [OpenAI Gym](https://gym.openai.com/) : Reinforcement Learning Environments
