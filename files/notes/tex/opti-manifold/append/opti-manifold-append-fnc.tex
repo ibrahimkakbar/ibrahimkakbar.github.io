@@ -1,0 +1,85 @@
+\documentclass[a4paper]{article}
+
+% Language and Font Encoding
+\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{caption}         % For captions
+\usepackage{fancyhdr}        % For header and footer
+\usepackage{rotating}
+\usepackage{amssymb}
+%\usepackage{varwidth}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+% Useful Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%\usepackage{bbm}
+\usepackage{siunitx}
+\usepackage{cite}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\softmax}{softmax}
+
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+
+\pagestyle{fancy}
+\lhead{Appendix: Functions}
+\rhead{}
+
+\begin{document}
+
+\title{Optimization on Manifolds, Appendix: Functions}
+\author{Ibrahim Akbar}
+\maketitle
+
+
+\section{Definition}
+
+There is no generally accepted manner for defining a function, it's domain, or it's codomain, thus this section is rather used as a means to denote the book's conventions for how these terms are defined. Furthermore to provide a more thorough introdution into functions there is a more abstract definition, \textbf{morphisms}.\\
+
+\noindent A \textbf{function}, $f$, is a mapping from one set to another set,
+$$
+f: A\rightarrow B
+$$
+such that $f$ is a set of ordered pairs $(a,b)$ where $a\in A$ and $b\in B$ and has the condition that if $(a,b)\in f$ and $(a,c)\in f$ then $b=c$. This means that an element in the set $A$ may only be the 1\textsuperscript{st} element of 1 ordered pair. Otherwise the function would be ambigious allowing an input to map to multiple outputs. If $(a,b)\in f$ then we can say $b = f(a)$. Note that $f(a)$ need not be defined for all $a\in A$ in this book. Thus this definition of a function aligns more with the concept of \textbf{partial functions} which may be seen as a generalization of a function by not requiring it to map every element of $A$ to $B$.\\
+
+\noindent The \textbf{domain} of a function $f$, is also denoted as the input and can be defined as the elements in $A$ such that there exists an element in $B$ in order for the ordered pair $(a,b)$ to be in $f$.
+$$
+dom(f) := \{a\in A: \exists b\in B: (a,b)\in f\}
+$$
+
+\noindent The \textbf{range} of a function $f$, also known as the image can be seen as the resulting set based on applying the function to the elements in $A$.
+$$
+range(f) := \{b\in B:\exists a\in A:(a,b)\in f\}
+$$
+
+\noindent The \textbf{pre-image} of a function $f$ we say is $f(Y)^{-1}$ and is defined as $f(Y)^{-1} := \{a\in A:f(a)\in Y:Y\subseteq B\}$. This means that the pre-image is a subset of the domain.\\
+
+\noindent A \textbf{surjective} function is one that maps \textit{onto} a set. More specifically for every element $b\in B$ there must exists an element $a\in A$ such that $f(a) = b$. This is equivalent to saying that a functions range is equivalent to the codomain.
+$$
+\forall b\in B\hspace{2mm}\exists a\in A : f(a) = b 
+$$
+A \textbf{codomain} is the set that $f$ can map to similar to the domain which is the set that $f$ maps from.\\
+
+\noindent An \textbf{injective} function $f$ such that if $a_{1}\neq a_{2}$ then $f(a_{1})\neq f(a_{2})$. Simple examples for visualization of injective and non-injective would be $x\mapsto x$ and $x\mapsto x^{2}$, respectively. A \textbf{bijective} function is one that is both surjective and injective and thus has a one-to-one correspondence between the sets. Note, that in this book, the codomain and range are not differentiated (commonly done in set-theory or graph definitions) and thus a bijective function need only be injective since every function is surjective.\\
+
+\noindent A \textbf{morphism} is a structure-preserving map between algebraic structures. That means for set theory it is functions, linear algebra uses linear transformations, topology uses continuous functions, etc.\\
+
+\noindent A \textbf{homomorphism} is a morphism between algebraic structure of the same type.\\
+
+\noindent An \textbf{isomorphism} is a homomorphism that admits an inverse mapping. This means that $f: A\rightarrow B$ is an isomorphism if and only if there exists a function $g$ such that if $f(a) = b$ then $g(b) = a$. For a morphism/function $f$ to admit an inverse $f$ must be bijective as otherwise the inverse function $g$ would not hold the original property nor would $g$ be on the set $B$.\\
+
+\noindent A \textbf{homeomorphism} is an isomorphism that is continuous. For topological spaces a definition of a \textbf{continuous function} $f$ is a function such that for every open set $V\in B$ the pre-image is an open set in $A$.\\
+
+\noindent A \textbf{diffeomorphism} is an isomorphism between smooth manifolds. Smooth simply means that the structure belongs to $C^{\infty}$ and hence can be differentiated infinitely many times. This is not to be confused with a \textbf{differentiable manifold} which is a generalization of a smooth manifold.\\
+\end{document}
+

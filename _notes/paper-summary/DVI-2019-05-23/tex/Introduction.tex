@@ -1,0 +1,12 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Full bayesian inference for most neural network is intractable due to the model's nonlinearity causing the true posterior distribution to be highly complex. This has led to the use of variational methods which attempt to approximate the posterior. With regard to bayesian variational inference; this paper addresses the general issue of prior selection to reduce the sensitivity BNNs have toward such initializations and the high variance that arises in the gradients when employing Monte Carlo approximation techniques.
+
+The authors list their contributions as:
+\begin{itemize}
+	\item Development of a deterministic procedure for propagating uncertain activations through neural networks with uncertain weights and ReLU or Heaviside activation functions.
+	\item Development of an EB method for principled tuning of weight priors during BNN training.
+	\item Experimental results showing the accuracy and efficiency of our method and applicability to heteroscedastic and homoscedastic regression on real datasets.
+\end{itemize}    
+ 

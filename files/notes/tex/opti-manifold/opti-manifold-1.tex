@@ -1,0 +1,133 @@
+\documentclass[a4paper]{article}
+
+% Language and Font Encoding
+\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{caption}         % For captions
+\usepackage{fancyhdr}        % For header and footer
+\usepackage{rotating}
+\usepackage{amssymb}
+%\usepackage{varwidth}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+% Useful Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%\usepackage{bbm}
+\usepackage{siunitx}
+\usepackage{cite}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\softmax}{softmax}
+
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+
+\pagestyle{fancy}
+\lhead{Optimization On Manifolds: 1}
+\rhead{}
+
+\begin{document}
+
+\title{Notes: Optimization on Manifolds, Ch. 1}
+\author{Ibrahim Akbar}
+\maketitle
+
+%--------Introduction---------------
+\section{Introduction}
+
+%-----------Objective---------------
+\subsection{Objective}
+\begin{enumerate}
+     \item Generalize a given optimization algorithm on an abstract manifold.
+     \item Modify the algorithm to be an efficient numberical procedure that either invalidates or justifies the 1\textsuperscript{st} step.
+\end{enumerate}
+
+%-----------Information------------
+\subsection{Information}
+\begin{itemize}
+\item This book is about the design of numerical algorithms for computational problems on smooth search spaces.
+\item \textbf{Example}: The eigenvalue problem: Given a linear transformation $\mathcal{T}:\mathcal{U}\rightarrow\mathcal{U}$ with eigenvector $\mathbf{v}$.
+
+\begin{itemize}
+\item Eigenvectors span an invariant subspace under the transformation $\mathcal{T}$.
+\item A subset, $\mathcal{S}\subset\mathcal{U}$, is an invariant subset under a transformation,$A$, if $\mathbf{x}\in\mathcal{S}\Rightarrow A\mathbf{x}\in\mathcal{S}$.
+\item Thus eigenvectors are not isolated in the search space and it is preferable for computation that points are isolated in the search space. (\textit{Definition of isolation?})
+\item Solutions to this are to impose a norm equality constraint (\textit{Why}?) or factor the space by a scale-invariant operator such that any subspace reduces to a point.
+\item These produce the \textit{embedded submanifold} and \textit{quotient manifold}, respectively and are the proto-type structures.
+\end{itemize}
+
+\item Scale invariance property is one of several symmetries that may be exploited in order to reformulate the optimization problem as nondegenerative on an embedded or quotient manifold associated with the original search space.
+\item Such sets carry the structure of nonlinear matrix manifolds and this book provides the tools to exploit such structures to develop efficient algorithms.
+\item A challenge is that classically, optimization algorithms rely on the assumptions of a Euclidean vector space structure, but in order for these to be well-defined on a manifold this must be reformulated in the differential geometry sense.
+\item This book makes sure to equally consider the practical implementation and the geometric formulation.
+
+\begin{itemize}
+\item Concepts such as \textit{retraction} and \textit{vector transport} aid in the formalization of concrete aspects of algorithm design. (These are relaxations of classical geometric concepts of motion along geodesics and parallel transport).
+\end{itemize}
+
+\item This book is an extension of Absil's PhD Thesis which relies heavily on Mahony's Thesis.
+\end{itemize}
+
+% ----------Layout---------------
+\subsection{Layout}
+\begin{itemize}
+\item \textbf{Chapter 2}
+
+\begin{itemize}
+\item Detailed Discription of the invariant subspace problem.
+\item Other applications that can be re-formulized as problems of the same nature.
+\end{itemize}
+
+\item \textbf{Chapter 3}
+
+\begin{itemize}
+\item Riemannian Manifold
+\item Tangent Spaces
+\end{itemize}
+
+\item \textbf{Chapter 4}
+
+\begin{itemize}
+\item Gradient-descent line-search algorithms
+\item Retraction
+\end{itemize}
+
+\item \textbf{Chapter 5}
+
+\begin{itemize}
+\item Advanced material needed to define higher-order derivatives on manifolds.
+\item Advanced material beeded to build analogous first- and second-order local models required in most optimization problem.
+\item This book does not provide a complete introduction to classical differential geometry. (See References)
+\end{itemize}
+
+\item \textbf{Chapter 6}
+
+\begin{itemize}
+\item Newton-based Methods
+\end{itemize}
+
+\item \textbf{Chapter 7}
+
+\begin{itemize}
+\item Trust-region Methods
+\end{itemize}
+
+\item \textbf{Chapter 8}
+
+\begin{itemize}
+\item Vector Transport
+\item Survey of other superlinear methods (e.g. conjugate gradient)
+\end{itemize}
+
+\end{itemize}
+\end{document}
+

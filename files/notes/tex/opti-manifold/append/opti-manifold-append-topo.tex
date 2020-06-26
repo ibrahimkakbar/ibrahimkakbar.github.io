@@ -1,0 +1,96 @@
+\documentclass[a4paper]{article}
+
+% Language and Font Encoding
+\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{caption}         % For captions
+\usepackage{fancyhdr}        % For header and footer
+\usepackage{rotating}
+\usepackage{amssymb}
+%\usepackage{varwidth}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+% Useful Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%\usepackage{bbm}
+\usepackage{siunitx}
+\usepackage{cite}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\softmax}{softmax}
+
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+
+\pagestyle{fancy}
+\lhead{Appendix: Topology}
+\rhead{}
+
+\begin{document}
+
+\title{Optimization on Manifolds, Appendix: Topology}
+\author{Ibrahim Akbar}
+\maketitle
+
+\section{Definitions}
+This serves as a light introduction into the topic of topology, but is not sufficient to have a complete or deep understanding. For further information, I suggest reading James Munkres' \textit{Topology} text for a thorough introduction.\\
+
+\noindent Just as an n-dimensional vector space is an abstraction of $\mathbb{R}^{n}$, a topology on a set $X$ is an abstraction of open sets in $\mathbb{R}^{n}$.\\
+
+\noindent A \textbf{topology} on a set $X$ is a collection $\mathcal{T}$ of open subsets of $X$ such that:
+
+\begin{enumerate}
+\item $X,\{0\}\in\mathcal{T}$
+\item Given a subcollection $\mathcal{S}$ of $\mathcal{T}$, $\cup_{i}S_{i}\in\mathcal{T}$
+\item Given a finite subcollection $\mathcal{S}$ of $\mathcal{T}$, $\cap_{i}S_{i}\in\mathcal{T}$
+\end{enumerate}
+
+\noindent Thus a topology is the couple $(X,\mathcal{T})$, but when notation allows it will be abbreviated to $X$. Currently, the definition for topology is not well-defined as we do not know what "open" means.\\
+
+\noindent Let $X$ be a topological space. Let $A$ be a subset of $X$. A \textbf{neighborhood} of a point $x$ on $X$ is a subset $\mathcal{V}$ that includes an open set, $\mathcal{U}$ containing $x$.
+$$
+x\in\mathcal{U}\subset\mathcal{V}\subseteq X
+$$
+
+\noindent A \textbf{limit point} or \textbf{accumulation point} of a subset $A$ of $X$ is a point $x$ of $X$ such that every neighborhood of $x$ intersects $A$ in some point \textit{other than} $x$. Note that it is important to distinguish between intersecting at $x$ and somewhere else. If the restriction of intersecting at points other than were to be removed $x$ would be a \textbf{point of closure}. Thus every point of closure is a limit point but not necessarily every limit point is a point of closure.\\
+
+\noindent A subset is \textbf{closed} if and only if it contains all it's limit points. An open set is naturally one that does not contain all it's limit points.\\
+
+\noindent A sequence of points $\{x_{k}\}_{k=1,2,\ldots}$ of $X$ \textbf{converges} to a point $x\in X$ if for every neighborhood $\mathcal{U}$ of $x$ there exists a positive integer $K$ such that $x_{k}$ belongs to $\mathcal{U}$ for all $k\geq K$.\\
+
+\noindent Since topology needs to satisfy relatively few axioms it is natural that properties that may hold for $\mathbb{R}^{n}$ may not hold for $X$. As an example a \textbf{singleton} which is a set containing only one element may not be closed in the topological sense. Take for example the topology of $[-1,1]$. The open sets are $[-1, a)$ for $a > 0$,$(b,a)$ for $a < 0, b > 0$, and  $(b, 1]$ for $b < 0$ \textit{(Why?)}. To avoid such situations \textbf{separation axioms} have been introduced to make a distinction between topologies.\\
+
+\noindent A topological space $X$ is $T_{1}$; \textbf{accessible} or \textbf{Fr\'{e}chet}, if for any distinct points $x$ and $y$ of $X$ there is an open set containing $x$ and not $y$. (Every singleton is closed.)\\
+
+\noindent A topological space $X$ is $T_{2}$, \textbf{Hausdorff}, if any two distinct points of $X$ have disjoint neighborhoods. A Hausdorff topology means that any sequence of points on $X$ converges to at most one point of $X$.\textit{(Why?)}\\
+
+\noindent Let $\mathcal{T}_{1}$ and $\mathcal{T}_{2}$ be topological spaces of $X$. If $\mathcal{T}_{1}\subseteq\mathcal{T}_{2}$ then $\mathcal{T}_{2}$ is said to be \textbf{finer}.\\
+
+\newpage
+\noindent A \textbf{base} or \textbf{basis} for a topology on set $X$ is a collection $\mathcal{B}$ of subsets of $X$ such that
+\begin{enumerate}
+\item each $x\in X$ belongs to at least one element in $\mathcal{B}$
+\item if $x\in(B_{1}\cap B_{2})$ with $B_{1},B_{2}\in\mathcal{B}$, then there exists $B_{3}\in\mathcal{B}$ such that $x\in B_{3}\subseteq B_{1}\cap B_{2}$.
+\end{enumerate}
+
+\noindent If $\mathcal{B}$ is a base for topology $\mathcal{T}$ then $\cup_{i}\mathcal{B} = \mathcal{T}$ and a topology is denoted as \textbf{second-countable} if it's base is finite.\\
+
+\noindent If $X$ and $Y$ are topological spaces then the \textbf{product topology} $X\times Y$ has the base $\mathcal{B}$ which is the collection of all sets of the form $U\times V$ where $U$ is an open set of $X$ and $V$ is an open set of $Y$.\\
+
+\noindent If $Y$ is a subset of a topological space $(X,\mathcal{T})$. Then $\mathcal{T}_{Y} = \{Y\cap U\mid U\in\mathcal{T}\}$ is a topology on $Y$ called the \textbf{subspace topology}.\\
+
+\noindent A collection $\mathcal{A}$ of subsets of $X$ \textbf{cover} or is a \textbf{covering} of $X$ if the union of the elements of $\mathcal{A}$ is equal to $X$.\\
+
+\noindent \textbf{Heine-Borel Theorem}: A subset of $\mathbb{R}^{n}$ with the subspace topology is compact if and only if it is closed and bounded.\\ 
+
+\end{document}
+

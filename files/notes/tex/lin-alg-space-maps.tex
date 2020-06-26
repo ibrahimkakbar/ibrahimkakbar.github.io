@@ -1,0 +1,181 @@
+\documentclass[a4paper]{article}
+
+% Language and Font Encoding
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{caption}         % For captions
+\usepackage{fancyhdr}        % For header and footer
+\usepackage{rotating}
+\usepackage{amssymb}
+\usepackage{varwidth}
+
+
+% Page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+% Useful Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning}
+\usepackage{amsthm}
+
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\softmax}{softmax}
+
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\pagestyle{fancy}
+\lhead{Linear Algebra Notes}
+\rhead{}
+
+\begin{document}
+
+\title{Linear Algebra: Vector Spaces, Subspaces, and Linear Maps}
+\author{Ibrahim Akbar\\}
+\maketitle
+
+%--------------------------------------------------------------------------------------------------------Vector Space--------------------------------------------------------------------------------------------------------------------
+\section{Vector Space}
+\textbf{Definition:} A collection, $\mathcal{V}$, is known as a vector (linear) space over the field $\mathbb{F}$ if it is equipped with the operations $+:\mathcal{V}\times\mathcal{V} \rightarrow \mathcal{V}$ and $\cdot:\mathbb{F}\times\mathcal{V}\rightarrow\mathcal{V}$ such that the following properties hold.\\
+
+\begin{itemize}
+\item Closure under Vector Addition:  $\mathbf{u + v} \in \mathcal{V} \quad \forall \mathbf{u,v} \in \mathcal{V}$
+\item Closure under Scalar Multiplication:  $\alpha \mathbf{v} \in \mathcal{V}  \quad \forall \mathbf{v} \in \mathcal{V}, \alpha \in \mathbb{F}$
+\item $(\alpha + \beta)\mathbf{v} = \alpha \mathbf{v} + \beta \mathbf{v}$
+\item $\alpha(\beta\mathbf{v}) = (\alpha\beta)\mathbf{v}$
+\item $\alpha(\mathbf{u + v}) = \alpha\mathbf{u} + \alpha\mathbf{v} $
+\item $\exists \{\mathbf{0}\} \hspace{2mm} \textnormal{s.t.} \hspace{2mm} \mathbf{v} +\{\mathbf{0}\} = \mathbf{v} \quad \forall\mathbf{v}\in\mathcal{V}$
+\item For each $\mathbf{v}\in\mathcal{V}\quad\exists \mathbf{(-v)}\hspace{2mm} \textnormal{s.t.} \hspace{2mm} \mathbf{v} +\mathbf{(-v)} = \{\mathbf{0}\}$
+\item $1\in\mathbb{F},\mathbf{v}\in\mathcal{V} \Rightarrow \mathbf{1v} = \mathbf{v}$
+\end{itemize}
+
+\subsection{Examples}
+Some examples of vector spaces are: $\mathbb{R}^{n}, \mathbb{C}^{n}$
+
+%----------------------------------------------------------------------------------------------------------Sub Space --------------------------------------------------------------------------------------------------------------------
+\section{Subspace}
+\textbf{Definition:} A subspace, $\mathcal{U}$ of a vector space, $\mathcal{V}$, over the field, $\mathbb{F}$, is a non-empty set such that,
+
+\begin{itemize}
+\item $\mathbf{u,v}\in\mathcal{W}\Rightarrow\mathbf{u+v}\in\mathcal{W}$
+\item $\mathbf{v}\in\mathcal{W}\Rightarrow\alpha\mathbf{w}\in\mathcal{W},\forall\alpha\in\mathbb{F}$
+\item $\exists \{\mathbf{0}\} \hspace{2mm} \textnormal{s.t.} \hspace{2mm} \mathbf{w} +\{\mathbf{0}\} = \mathbf{w} \quad \forall\mathbf{w}\in\mathcal{W}$
+\end{itemize}
+
+\subsection{Examples}
+Some examples of subspaces are:
+
+$$
+V := \{x\in\mathbb{R}^{n}\mid x^{2} \geq 4x\}
+$$
+
+Note that $V' := \{x\in\mathbb{R}^{n}\mid x^{2} > 4x\}$ would not be a subspace nor would any polynomial that does not equal zero. Why?\\
+In general, all spaces in $\mathbb{R}^{n}$ that are defined by a homogeneous system of linear equations adhere to these properties. For a visual/geometric representation it is a point, line, plane, hyper-plane that goes through the origin $\{\mathbf{0}\}$.
+
+%----------------------------------------------------------------------------------------------------Linear Independence-----------------------------------------------------------------------------------------------------------------
+\section{Linearly Independent}
+\textbf{Definition:} A set of vectors $\{\mathbf{x}_{1},\mathbf{x}_{2},\ldots,\mathbf{x}_{n}\}$ is said to be linearly independent if:
+$$
+\sum_{i = 1}^{n}\alpha_{i}\mathbf{x}_{i} = 0 \iff \alpha_{i} = 0 \hspace{2mm} \forall i
+$$
+
+The vectors cannot be written as a linear combination of each other and thus cannot describe each other. Therefore it is the same as saying there is no redundant information in the vectors.
+
+\subsection{Example}
+Let $\mathcal{S} = \Bigg\{\begin{bmatrix}2\\1\\-1\\\end{bmatrix},\begin{bmatrix}3\\2\\-1\\\end{bmatrix},\begin{bmatrix}-4\\-2\\1\\\end{bmatrix}\Bigg\}$, then we see that $-2v_{1} + 0v_{2} = v_{3}$ and therefore $\mathcal{S}$ is not a linearly independent set.\\
+
+%------------------------------------------------------------------------------------------------------------Span------------------------------------------------------------------------------------------------------------------------
+\section{Span}
+\textbf{Definition:} The span of a set of vectors $\mathcal{S} = \{\mathbf{x}_{1}, \mathbf{x}_{2}, \ldots, \mathbf{x}_{n}\}$ is the set of vectors, $\mathcal{V}$, that is described by all possible linear combinations of $\mathcal{S}$.
+$$
+V := span(\mathcal{S}) = \{y \mid y=\sum_{i = 1}^{n}\alpha_{i}x_{i}\hspace{2mm}\forall\alpha_{i}\in\mathbb{F}\}
+$$ 
+
+\subsection{Examples}
+Given the vector $v = \begin{bmatrix}1\\0\\\end{bmatrix}$ over the field of all reals it would span the space 
+$$
+\mathcal{S} = \bigg\{\begin{bmatrix}\alpha\\0\\\end{bmatrix}\mid \alpha\in\mathbb{R}\bigg\}
+$$
+Lets also consider $u = \begin{bmatrix}0\\1\\\end{bmatrix}$ in the same field. Together these would span
+$$
+\mathcal{T} = \bigg\{\begin{bmatrix}\alpha\\\beta\\\end{bmatrix}\mid\alpha,\beta\in\mathbb{R}\bigg\} = \mathbb{R}^{2}
+$$
+
+%------------------------------------------------------------------------------------------------------------Basis-----------------------------------------------------------------------------------------------------------------------
+\section{Basis}
+\textbf{Definition:} A basis for a vector space, $\mathcal{V}$, is a set of vectors, $\mathcal{T}$, such that it is the maximal linear independent set and minimal spanning set of $\mathcal{V}$.
+
+% Existence of a Basis and Uniqueness of a Basis
+Is a basis for a space unique?\\
+Let their be two bas
+Does a basis for a space exist?\\
+\subsection{Examples}
+A basis for $\mathbb{R}^{2}$ is $\begin{bmatrix} 0 & 1\\ 1 & 0\\ \end{bmatrix}$.\\
+
+We need to show that the set of vectors are linearly independent and span the space of $\mathbb{R}^{2}$.
+$$
+\alpha_{1}v_{1} + \alpha_{2}v_{2} = 0 \iff \alpha_{i} = 0\hspace{2mm}i = \{1,2\}
+$$
+$$
+\alpha_{1}\begin{bmatrix}0\\1\\\end{bmatrix} + \alpha_{2}\begin{bmatrix}1\\0\\\end{bmatrix} = 0
+$$
+$$
+\Rightarrow
+\begin{bmatrix}0\\\alpha_{1}\end{bmatrix} + \begin{bmatrix}\alpha_{2}\\0\\\end{bmatrix} = 0 
+$$
+$$
+\Rightarrow
+\begin{bmatrix}\alpha_{2}\\\alpha_{1}\\\end{bmatrix} = 0 \Rightarrow \alpha_{1} = \alpha_{2} = 0
+$$
+
+To see that it spans $\mathbb{R}^{2}$ can be observed from the previous section.\\
+%----------------------------------------------------------------------------------------------------------Linear Maps-------------------------------------------------------------------------------------------------------------------
+\section{Linear Maps}
+\textbf{Definition:} Given vector spaces, $\mathcal{U,V}$ over the field $\mathbb{F}$ a linear map, $T: \mathcal{U}\rightarrow\mathcal{V}$ is a transformation that preserves additivity and homogeneity.
+
+\begin{itemize}
+\item $T(\mathbf{u + w}) = T(\mathbf{u}) + T(\mathbf{w})\hspace{2mm} \forall\mathbf{u,w}\in\mathcal{U}$
+\item $T(\alpha\mathbf{u}) = \alpha T(\mathbf{u})$
+\end{itemize}
+
+\subsection{Examples}
+\begin{itemize}
+\item $T(x): x\rightarrow x^{2}$ is not linear.
+\item $T(x): x\rightarrow 0$ is linear.
+\end{itemize}
+
+If $\mathcal{U,V}$ are finite dimensional and a basis exists for them, the linear maps can be defined as matrices.
+
+\subsection{Range}
+\textbf{Definition:} Let $T: \mathcal{V}\rightarrow\mathcal{U}$ be a linear map and denote the Range(Image) of $T$ as,
+$$
+\mathcal{R}(T) = \{\mathbf{u}\mid T(v) = u,\hspace{2mm} \mathbf{u}\in\mathcal{U},\hspace{1mm}\mathbf{v}\in\mathcal{V}\}
+$$
+
+%-Is the range space unique? Does the range space exist?
+
+\subsection{Nullspace}
+\textbf{Definition:} Let $T: \mathcal{V}\rightarrow\mathcal{U}$ be a linear map, then denote the Nullspace of $T$ as,
+$$
+\mathcal{N}(T) = \{\mathbf{v}\mid T(v) = 0,\hspace{2mm}\mathbf{u}\in\mathcal{U}\}
+$$
+
+% Is the nullspace unique?
+
+\end{document}
+
+
+
+
+
+
+

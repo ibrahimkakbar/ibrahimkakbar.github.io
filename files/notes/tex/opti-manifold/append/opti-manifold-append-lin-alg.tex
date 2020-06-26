@@ -1,0 +1,143 @@
+\documentclass[a4paper]{article}
+
+% Language and Font Encoding
+\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{caption}         % For captions
+\usepackage{fancyhdr}        % For header and footer
+\usepackage{rotating}
+\usepackage{amssymb}
+%\usepackage{varwidth}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+	
+% Useful Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%\usepackage{bbm}
+\usepackage{siunitx}
+\usepackage{cite}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\softmax}{softmax}
+
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+
+\pagestyle{fancy}
+\lhead{Appendix: Linear Algebra}
+\rhead{}
+
+\begin{document}
+
+\title{Optimization on Manifolds, Appendix: Linear Algebra}
+\author{Ibrahim Akbar}
+\maketitle
+
+\section{Definitions}
+
+This is an abbreviation of the material provided in the Appendix A1 of \textit{Optimization on Manifolds} and will provide definitions of various terms that appear throughout the notes. For proofs and further insight into the concepts refer to the Linear Algebra notes. Note that the conventions used between separate texts may not be the same. I will make sure to be as explicit as possible unless it is obvious from context.\\
+
+\noindent Let $A,B$ be $n\times n$ matrices, the \textbf{commutator} of $A,B$ is: $[A,B] = AB - BA$.\\
+\noindent The commutator of two symmetric/skew-symmetric matrices is symmetric and skew-symmetric for a symmetric and skew-symmetric matrix.\\
+
+\noindent The \textbf{trace} of $A\in\mathbb{R}^{n\times p}$ is
+$$
+tr(A) = \sum_{i=1}^{\min{n,p}} = (A)_{ii}
+$$
+
+\noindent Properties of Trace
+\begin{itemize}
+\item $tr(A) = tr(A^{T}$
+\item $tr(AB) = tr(BA)$
+\item $tr([A,B]) = 0$
+\item $B^{T} = -B\Rightarrow tr(B) = 0$
+\item $(A^{T} = A \land B^{T} = -B)\Rightarrow tr(AB) = 0$
+\end{itemize}
+
+\noindent Let $A$ be an $n\times n$ matrix. $A$ is \textbf{invertible} if there exists a matrix, $B$, such that $AB = I_{n}$.\\
+
+\noindent A matrix $A$ is \textbf{orthonormal} if $A^{T}A = I$. If $A$ is a square orthonormal matrix then it is termed \textbf{orthogonal}.\\
+
+\noindent A \textbf{vector space}, $\mathcal{V}$, is a collection over a field, $\mathbb{F}$ that is endowed with the operators,  $+:V\times V\rightarrow\mathbb{V}$ and $\cdot:\mathbb{F}\times\mathcal{V}\rightarrow\mathcal{V}$.\\
+Note any \textit{n}-dimensional real vector space $\mathcal{E}$ is isomorphic to $\mathbb{R}^{n}$. A diffeomorphism requires determining a basis for $\mathcal{E}$ but may be computationally intractable, given it is a continuous space.
+Therefore the material considers abstract vector spaces and only finite-dimensional vector spaces over $\mathbb{R}$. To understand this statement better refer to the \textit{Morphisms and Functions} Appendix.\\
+
+\noindent A \textbf{norm} is an operator that maps from the vector space to the real field, $\norm{\cdot}:\mathcal{V}\times\mathcal{V}\rightarrow\mathbb{R}$.\\
+
+\noindent Properties of Norm
+\begin{itemize}
+\item $\norm{\mathbf{v}} = 0 \iff \mathbf{v} = 0 \hspace{2mm} \forall\mathbf{v}\in\mathcal{V}$
+\item $\norm{\alpha\mathbf{v}} = |\alpha|\norm{\mathbf{v}}$
+\item $\norm{\mathbf{u+v}} \leq \norm{\mathbf{u}} + \norm{\mathbf{v}}$
+\end{itemize}
+
+\noindent This mapping allows for the definition of a \textbf{normed vector space}, $\mathcal{V}$, which is endowed with a norm.\\
+
+\noindent A \textbf{linear transformation}, $\mathcal{T}:\mathcal{V}\rightarrow{U}$, is linear if $\mathcal{T}(\alpha\mathbf{v}_{1}+\beta\mathbf{v}_{2}) = \alpha T(\mathbf{v}_{1})+\beta T(\mathbf{v}_{2})\hspace{2mm}\forall \mathbf{v}_{1},\mathbf{v}_{2}\in\mathcal{V}$.\\ 
+
+\noindent We can define the set $\mathcal{L}(\mathcal{E};\mathcal{F})$ as all operators $A:\mathcal{E}\rightarrow\mathcal{F}$ which is also a vector space. Furthermore, if we let $\mathcal{E}, \mathcal{F}, \mathcal{G}$ be normed vector spaces we can define norms as:
+$\norm{\cdot}_{\mathcal{L}(\mathcal{E};\mathcal{F})},\norm{\cdot}_{\mathcal{L}(\mathcal{E};\mathcal{G})},\norm{\cdot}_{\mathcal{L}(\mathcal{F};\mathcal{G})}$.\\
+These are \textbf{mutually consistent} if for all $A\in\mathcal{L}(\mathcal{E};\mathcal{F})$ and $B\in\mathcal{L}(\mathcal{F};\mathcal{G})$:
+$$
+\norm{B\circ A}_{\mathcal{L}(\mathcal{E};\mathcal{G})} \leq \norm{A}_{\mathcal{L}(\mathcal{E};\mathcal{F})}\norm{B}_{\mathcal{L}(\mathcal{F};\mathcal{G})}
+$$
+A \textbf{consistent} or \textbf{submultiplicative norm} is mutually consistent with itself.\\
+
+\noindent Furthermore the \textbf{operator norm} or \textbf{induced norm} of $A\in\mathcal{L}(\mathcal{E};\mathcal{F})$ is
+$$
+\norm{A}_{\mathcal{L}(\mathcal{E};\mathcal{F})} = \sup_{x\in\mathcal{E}}\frac{\norm{Ax}}{\norm{x}}
+$$
+
+\noindent Operator norms are mutually consistent.\\
+
+\noindent A \textbf{bilinear} operator is a mapping $A:\mathcal{E}\times\mathcal{F}\rightarrow\mathcal{G}$ over normed vector spaces such that it is linear operator with respect to both spaces $\mathcal{E},\mathcal{F}$. We will denote the space of such operators as $\mathcal{L}(\mathcal{E},\mathcal{F};\mathcal{G})$ or $\mathcal{L}_{2}(\mathcal{E};\mathcal{F}$ if the two input spaces are identical. A simple example of a bilinear operator would be matrix multiplication. A bilinear operator is denoted as \textbf{symmetric} if $A[x,y] = A[y,x]$.\\
+
+\noindent A symmetric bilinear operator $A\in\mathcal{L}_{2}(\mathcal{E};\mathbb{R})$ is \textbf{positive-definite} if $A[\mathbf{x,x}] > 0\hspace{2mm}\forall\mathbf{x}\in\mathcal{E}$.\\
+
+\noindent A \textbf{Euclidean space} is a finite-dimensional vector space endowed with an inner product (bilinear, symmetric, positive definite operator) $\langle\cdot,\cdot\rangle$.\\
+
+\noindent An \textbf{orthonormal basis} of an n-dimensional Euclidean space $\mathcal{E}$ is a sequence $(e_{1},e_{2},\ldots,e_{n})$ of elements such that,
+$$
+\langle e_{i},e_{j}\rangle = 
+\begin{cases}
+1 & i = j\\
+0 & i\neq j\\
+\end{cases}
+$$
+
+\noindent An operator $\mathcal{T}:\mathcal{E}\rightarrow\mathcal{E}$ is \textbf{symmetric} if $\langle \mathcal{T}[x],y\rangle = \langle x,\mathcal{T}[y]\rangle$.\\
+
+\noindent Given an operator $\mathcal{T}:\mathcal{E}\rightarrow\mathcal{F}$ maps between two Euclidean spaces, the \textbf{adjoint} of T, denoted $\mathcal{T}^{*}:\mathcal{F}\rightarrow\mathcal{E}$ is such that $\langle \mathcal{T}[x],y\rangle = \langle x, \mathcal{T}^{*}[y]\rangle\hspace{2mm}\forall x\in\mathcal{E}\hspace{2mm}y\in\mathcal{F}$.\\
+
+\noindent The \textbf{kernel} of an operator is $ker(\mathcal{T}) := \{x\in\mathcal{E}\mid\mathcal{T}[x] = 0\}$.\\
+
+\noindent The \textbf{range} of an operator is $range(\mathcal{T}) := \{\mathcal{T}[x]\mid x\in\mathcal{E}\}$.\\
+
+\noindent The \textbf{orthogonal compliment} of a subspace, $\mathcal{S}\subset\mathcal{E}$ is denoted $\mathcal{S}^{\perp} := \{x\mid\langle x,y\rangle = 0\hspace{2mm}y\in\mathcal{S}\}$.\\
+
+\noindent Given that $x\in\mathcal{E}$ it can be uniquely decomposed as $x = x_{1} + x_{2}$ where $x_{1}\in\mathcal{S}$ and $x_{2}\in\mathcal{S}^{\perp}$. $x_{1},x_{2}$ are \textbf{orthogonal projections} of $x$ into their respective space. Let $\Pi_{\mathcal{S}}(x)$ denote the orthogonal projection of $x$ onto $\mathcal{S}$.\\
+
+\noindent The \textbf{Moore-Penrose Inverse} also known as the pseudo-inverse is used to determine the orthogonal projection that satisfies the least squares problem.
+$$
+T^{\dagger} = (T^{*}T)^{-1}T^{*}y
+$$
+
+\noindent The \textbf{Euclidean norm} on a Euclidean space, $\mathcal{E}$, is $\norm{x}_{2} := \sqrt{\langle x,x\rangle}$, whereas on $\mathbb{R}^{n}$ it is $\norm{x}_{2} := \sqrt{x^{T}x}$.\\
+
+\noindent Given an inner product space $\mathbb{R}^{n\times p}$ that has the inner product $\langle X,Y\rangle := tr(X^{T}Y)$ the Euclidean norm is the \textbf{Forbenius norm} denoted by $\norm{A}_{F} := \bigg(\sum_{i,j}(A)_{i,j}^{2}\bigg)^{\frac{1}{2}}$.\\
+
+\noindent An operator norm on $\mathbb{R}^{n\times n}$ with $\mathbb{R}^{n}$ has the Euclidean norm is known as the \textbf{spectral norm}
+$$
+\norm{A}_{2} := \sqrt{\lambda_{max}(A^{T}A)}
+$$
+
+\end{document}
+

@@ -1,0 +1,17 @@
+\section{Problem Formulation}
+\label{sec:problem_formulation}
+
+Given a model $\mathcal{M}$ parameterized by $\bm{\omega}$ and a dataset $\mathcal{D} = \{(\mathbf{x}_i,\mathbf{y}_i)\}_{i=1}^{\mathbb{N}}$, the inference goal is to determine the posterior distribution $p(\bm{\omega} \mid \mathbf{X}, \mathbf{Y})$ through Bayes' rule. Since this posterior is generally intractable we consider the parameterized variational distribution $q(\bm{\omega};\bm{\theta})$ that is optimal for $\bm{\theta}^*$ in terms of KL Divergence.
+
+$$
+\bm{\theta}^* = \argmin_{\bm{\theta}\in\Theta} KL\left[q(\bm{\omega};\bm{\theta})||p(\bm{\omega} \mid \mathbf{X}, \mathbf{Y})\right]
+$$
+
+Given a prior, $p(\bm{\omega})$, we can can reformulate this as the evidence lower bound (ELBO):
+
+\begin{equation}
+\bm{\theta}^* = \argmax_{\bm{\theta}\in\Theta}\left\{\mathbb{E}_{\bm{\omega}\sim q}\big[\log p(\mathbf{Y} \mid \mathbf{X}, \bm{\omega})\big] - KL\big[q(\bm{\omega};\bm{\theta} || p(\bm{\omega})\big]\right\}
+\end{equation}
+
+The goal of this paper is to derive an explicit deterministic approximation of the first term, known as reconstruction term, and choose priors $p(\bm{\omega})$ empirically to increase robustness to the choice of variance parameters.
+
