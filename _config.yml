@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "The Life of Ibrahim"
+title                    : "Ibrahim's Corner"
 title_separator          : "-"
 name                     : &name "Ibrahim Akbar"
 description              : &description "All of my deemed important items"
@@ -85,11 +85,11 @@ author:
   name             : "Ibrahim Akbar"
   avatar           : "headshot2.jpg"
   bio              : "Robotics Enthusiast"
-  location         : "San Jose, CA"
-  employer         : "Honda RI"
+  location         : "Washington, DC"
+  employer         : "Booz Allen"
   pubmed           :
   googlescholar    :
-  email            : "iakbar@ucsd.edu"
+  email            : "ibrahimkakbar1@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              : 
   bitbucket        : "iakbar16" 
